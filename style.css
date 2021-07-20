@@ -75,6 +75,7 @@ body {
 }
 .d:hover {
     background: hsl(177, 30%, 37%);
+    cursor: pointer;
 }
 .grid {
     display: grid;
@@ -290,6 +291,7 @@ a.timec:hover {
 }
 .icon:hover {
     border: none;
+    cursor: pointer;
 }
 .fa-facebook:hover {
     height: 31px;
@@ -297,6 +299,7 @@ a.timec:hover {
     border-radius: 45px;
     color: hsl(176, 68%, 64%);
     border: 1px solid hsl(176, 68%, 64%);
+    cursor: pointer;
 }
 .fa-twitter {
     color: hsl(0, 0%, 100%);
@@ -307,7 +310,8 @@ a.timec:hover {
     width: 31px;
     border-radius: 45px;
     color: hsl(176, 68%, 64%);
-    border: 1px solid hsl(176, 68%, 64%)
+    border: 1px solid hsl(176, 68%, 64%);
+    cursor: pointer;
 }
 .fa-instagram {
     color: hsl(0, 0%, 100%);
@@ -319,6 +323,7 @@ a.timec:hover {
     border-radius: 45px;
     color: hsl(176, 68%, 64%);
     border: 1px solid hsl(176, 68%, 64%);
+    cursor: pointer;
 }
 .shift {
     margin-left: 20px;
@@ -329,6 +334,7 @@ a.timec:hover {
 }
 .shiftc:hover {
     font-weight: 700;
+    cursor: pointer;
 }
 .shiftc:link {
     color: hsl(0, 0%, 100%);
