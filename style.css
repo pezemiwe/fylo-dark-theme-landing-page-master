@@ -10,6 +10,7 @@ body {
     background-color: hsl(218, 28%, 13%);
     background-image: url("./images/bg-curvy-desktop.svg");
     background-repeat: no-repeat;
+
 }
 .body {
     padding: 20px 60px 0 60px;
@@ -18,8 +19,8 @@ body {
 .head {
     display: flex;
     justify-content: space-between;
-    padding: 60px 10px 0 10px;
-    margin: 0 20px 0 20px;
+    padding: 60px 20px 0 20px;
+    margin: 0 20px;
 }
 .sub {
     display: flex;
@@ -74,8 +75,10 @@ body {
     color: hsl(0, 0%, 100%);
 }
 .d:hover {
-    background: hsl(177, 30%, 37%);
     cursor: pointer;
+}
+.d:active {
+    background: hsl(177, 30%, 37%);
 }
 .grid {
     display: grid;
@@ -250,16 +253,21 @@ a.timec:hover {
     width: 50%;
 }
 .footer {
-    background-color: hsl(216, 53%, 9%);
+    background: hsl(216, 53%, 9%);
     height: 500px;
+    width: 100%;
     margin-top: 300px;
     position: relative;
+    color: hsl(0, 0%, 100%);
+    
+    
 }
 .foot {
     display: flex;
     flex-direction: column;
-    color: hsl(0, 0%, 100%);
+    justify-content: center;
     padding: 180px 40px 0 40px;
+    max-width: 1440px;
 }
 .row {
     display: flex;
@@ -281,45 +289,45 @@ a.timec:hover {
 .icon {
     height: 30px;
     width: 30px;
-    border-radius: 50px;
     margin-left: 16px;
-    border: 1px solid hsl(0, 0%, 100%);
+    
 }
 .fa-facebook {
     color: hsl(0, 0%, 100%);
-    padding: 6px 0 0 6.5px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 15px;
 }
 .icon:hover {
     border: none;
     cursor: pointer;
 }
 .fa-facebook:hover {
-    height: 31px;
-    width: 31px;
-    border-radius: 45px;
     color: hsl(176, 68%, 64%);
     border: 1px solid hsl(176, 68%, 64%);
     cursor: pointer;
 }
 .fa-twitter {
     color: hsl(0, 0%, 100%);
-    padding: 7px 0 0 7px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 15px;
 }
 .fa-twitter:hover {
-    height: 31px;
-    width: 31px;
-    border-radius: 45px;
     color: hsl(176, 68%, 64%);
     border: 1px solid hsl(176, 68%, 64%);
     cursor: pointer;
 }
 .fa-instagram {
     color: hsl(0, 0%, 100%);
-    padding: 6px 0 0 7px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 15px;
 }
 .fa-instagram:hover {
-    height: 31px;
-    width: 31px;
     border-radius: 45px;
     color: hsl(176, 68%, 64%);
     border: 1px solid hsl(176, 68%, 64%);
@@ -396,7 +404,7 @@ a.timec:hover {
     background-color: hsl(217, 28%, 15%);
     border-radius: 10px;
 } */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 .head {
     padding: 60px 5px 0 5px;
     margin: 5px;
@@ -417,6 +425,8 @@ a.timec:hover {
     justify-content: center;    
 }
 .grid {
+    display: flex;
+    flex-direction: column;
  
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto); 
@@ -449,6 +459,9 @@ a.timec:hover {
 .tab {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
 }
 .taba {
@@ -462,7 +475,8 @@ a.timec:hover {
     margin-bottom: 20px;
 }
 .tab::before {
-    top: -5%;
+    top: -4%;
+    left: 20%;
 }
 .row {
     display: flex;
@@ -489,6 +503,9 @@ a.timec:hover {
     width: 450px;
     height: 450px;
     text-align: center;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 35% );
 }
 .ico {
     margin-bottom: 20px;
@@ -499,13 +516,40 @@ a.timec:hover {
 }
 .footer {
     height: 800px;
-    width: 400px;
+    width: 100%;
 }
 .foot {
-    padding: 180px 30px 0 30px;
+    padding: 250px 30px 0 30px;
 }
 .img {
     width: 250px;
     margin-top: 30px;
 }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+
+.footer {
+    height: 500px;
+    width: 100%;
+    font-size: 80%;
+}
+.taba {
+    padding: 25px 15px 0 15px;
+    width: 280px;
+    margin-bottom: 20px;
+}
+.tabb {
+    padding: 25px 15px 0 15px;
+    width: 280px;
+    margin-bottom: 20px;
+}
+.time {
+    margin: 0px 40px 0 50px;
+}
+.position {
+    width: 90%;
+
+}
+
 }
